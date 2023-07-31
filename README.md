@@ -1,3 +1,5 @@
+[![Deploy](https://github.com/fuww/cloudflare-workers-status-page/actions/workflows/deploy.yml/badge.svg)](https://github.com/fuww/cloudflare-workers-status-page/actions/workflows/deploy.yml)
+
 # Cloudflare Worker - Status Page
 
 Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://status-page.eidam.dev) out! 🚀
