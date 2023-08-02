@@ -2,7 +2,7 @@
 
 # Cloudflare Worker - Status Page
 
-Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://status-page.eidam.dev) out! 🚀
+Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://status.fashionunited.com) out! 🚀
 
 ![Status Page](.gitbook/assets/status_page_screenshot.png)
 
@@ -52,7 +52,7 @@ You can either deploy with **Cloudflare Deploy Button** using GitHub Actions or 
    ```yaml
    settings:
      title: 'Status Page'
-     url: 'https://status-page.eidam.dev' # used for Slack & Discord messages
+     url: 'https://status.fashionunited.com' # used for Slack & Discord messages
      logo: logo-192x192.png # image in ./public/ folder
      daysInHistogram: 90 # number of days you want to display in histogram
      collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans
@@ -82,7 +82,7 @@ You can either deploy with **Cloudflare Deploy Button** using GitHub Actions or 
 5. Push to `main` branch to trigger the deployment
 6. 🎉
 7. _\(optional\)_ Go to [Cloudflare Workers settings](https://dash.cloudflare.com/?to=/workers) and assign custom domain/route
-   - e.g. `status-page.eidam.dev/*` _\(make sure you include `/*` as the Worker also serve static files\)_
+   - e.g. `status.fashionunited.com/*` _\(make sure you include `/*` as the Worker also serve static files\)_
 8. _\(optional\)_ Edit [wrangler.toml](./wrangler.toml) to adjust Worker settings or CRON Trigger schedule, especially if you are on [Workers Free plan](#workers-kv-free-tier)
 
 ### Telegram notifications
