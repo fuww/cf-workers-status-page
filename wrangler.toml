@@ -4,6 +4,8 @@ compatibility_date = "2021-07-23"
 main = "index.js"
 type = "webpack"
 
+kv-namespaces = [{binding="KV_STATUS_PAGE", id="988cb5cca4da49738bc896aa09b6e0ba", preview_id=""}]
+
 [triggers]
 crons = ["* * * * *"]
 
@@ -11,7 +13,7 @@ crons = ["* * * * *"]
 bucket = "out"
 
 # uncomment and adjust following if you are not using GitHub Actions
-[env.production]
-kv-namespaces = [{binding="KV_STATUS_PAGE", id="988cb5cca4da49738bc896aa09b6e0ba", preview_id=""}]
+# [env.production]
+
 #zone_id="xxx"
 #route="xxx"
