@@ -15,25 +15,29 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: fashionunited-com # unique identifier
+    name: fashionunited.com
+    description: 'Fashion news and fashion jobs.' # default=empty
+    url: 'https://fashionunited.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: www-fashionunited-com
+    name: www.fashionunited.com
+    description: 'Fashion news and fashion jobs.'
+    url: 'https://www.fashionunited.com'
     method: GET
     expectStatus: 200
+    followRedirect: true
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: dashboard-fashionunited-com
+    name: dashboard.fashionunited.com
+    description: 'FashionUnited Dashboard'
+    url: 'https://dashboard.fashionunited.com'
     method: GET
     expectStatus: 200
+    followRedirect: true
+    linkable: true # allows the title to be a link, default=true
