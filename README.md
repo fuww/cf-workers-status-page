@@ -53,7 +53,7 @@ You can either deploy with **Cloudflare Deploy Button** using GitHub Actions or 
    settings:
      title: 'Status Page'
      url: 'https://status.fashionunited.com' # used for Slack & Discord messages
-     logo: logo-192x192.png # image in ./public/ folder
+     logo: favicon_106x106.png # image in ./public/ folder
      daysInHistogram: 90 # number of days you want to display in histogram
      collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans
 
